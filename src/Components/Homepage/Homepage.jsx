@@ -23,7 +23,7 @@ const Homepage = () => {
       
       <footer className="retro-footer">
         <marquee behavior="scroll" direction="left">
-          🚀 Under Construction | Best Viewed in Netscape Navigator 4.0 | 800x600 Resolution | © 1999-2025
+          🚀 Under Construction | go follow go like go share go show love to your bwoy| mathafaka!!!!! | © 1999-2025
         </marquee>
       </footer>
     </div>
