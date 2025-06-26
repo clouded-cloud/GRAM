@@ -4,7 +4,7 @@ import './Homepage.css';
 const Homepage = () => {
   return (
     <div className="retro-container crt">
-      <h1 className="retro-header">ToPhEr'S WoRlD Mathafaka</h1>
+      <h1 className="retro-header">Topher's world Mathafaka</h1>
 
       <div className="retro-links">
         <a href="https://www.tiktok.com/@cloudynginya" className="retro-link">
@@ -23,7 +23,7 @@ const Homepage = () => {
       
       <footer className="retro-footer">
         <marquee behavior="scroll" direction="left">
-          🚀 Under Construction | Best Viewed in Netscape Navigator 4.0 | 800x600 Resolution | © 1999-2024
+          🚀 Under Construction | Best Viewed in Netscape Navigator 4.0 | 800x600 Resolution | © 1999-2025
         </marquee>
       </footer>
     </div>
