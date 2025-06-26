@@ -1,35 +1,30 @@
 import React from 'react';
-import './Homepage.css'; // Import the CSS file
+import './Homepage.css';
 
 const Homepage = () => {
   return (
-    <div className="gothic-dark-container">
-      <h1 className="gothic-dark-header">TOPHER</h1>
-      
-      <div className="gothic-links-container">
-        <a href="https://www.tiktok.com/@cloudynginya?is_from_webapp=1&sender_device=pc" 
-           className="gothic-link gothic-link-tiktok">
-          TikTok
+    <div className="retro-container crt">
+      <h1 className="retro-header">ToPhEr'S WoRlD Mathafaka</h1>
+
+      <div className="retro-links">
+        <a href="https://www.tiktok.com/@cloudynginya" className="retro-link">
+          <span role="img" aria-label="TikTok">🎵</span> TikTok
         </a>
-        
-        <a href="https://www.twitch.tv/topher000000000000" 
-           className="gothic-link gothic-link-twitch">
-          Twitch
+        <a href="https://www.twitch.tv/topher000000000000" className="retro-link">
+          <span role="img" aria-label="Twitch">🎮</span> Twitch
         </a>
-        
-        <a href="https://www.youtube.com/@cloudynginya" 
-           className="gothic-link gothic-link-youtube">
-          YouTube
+        <a href="https://www.youtube.com/@cloudynginya" className="retro-link">
+          <span role="img" aria-label="YouTube">📺</span> YouTube
         </a>
-        
-        <a href="https://www.instagram.com/t00pher/" 
-           className="gothic-link gothic-link-instagram">
-          Instagram
+        <a href="https://www.instagram.com/t00pher/" className="retro-link">
+          <span role="img" aria-label="Instagram">📸</span> Instagram
         </a>
       </div>
       
-      <footer className="gothic-footer">
-        WELCOME TO TOPHERS WORLD
+      <footer className="retro-footer">
+        <marquee behavior="scroll" direction="left">
+          🚀 Under Construction | Best Viewed in Netscape Navigator 4.0 | 800x600 Resolution | © 1999-2024
+        </marquee>
       </footer>
     </div>
   );

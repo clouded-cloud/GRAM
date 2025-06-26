@@ -1,93 +1,84 @@
-
-    /* Gothic Dark Mode Styles */
-.gothic-dark-container {
-  background-color: #121212;
+/* Nostalgic 90s/Y2K Aesthetic */
+.retro-container {
+  background-color: #000080; /* Classic "web safe" blue */
   min-height: 100vh;
-  padding: 2rem;
-  font-family: 'Times New Roman', serif;
-  color: #e0e0e0;
-}
-
-.gothic-dark-header {
-  color: #c62828;
+  padding: 20px;
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  color: #00ffff; /* Cyan text */
+  background-image: linear-gradient(
+    to bottom,
+    #000080 0%,
+    #1084d0 100%
+  );
   text-align: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px #000;
-  letter-spacing: 0.5rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #c62828;
-  padding-bottom: 1rem;
 }
 
-.gothic-links-container {
+.retro-header {
+  color: #ff00ff; /* Hot pink */
+  font-size: 3rem;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
+  margin-bottom: 30px;
+  animation: glow 2s infinite alternate;
+}
+
+.retro-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 15px;
 }
 
-.gothic-link {
+.retro-link {
+  display: inline-block;
+  color: #ffff00; /* Yellow */
+  background-color: #ff00ff; /* Pink */
+  padding: 10px 20px;
+  margin: 5px;
   text-decoration: none;
   font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+  border: 3px dashed #00ffff;
+  border-radius: 0;
+  transition: all 0.3s;
+  width: 200px;
 }
 
-.gothic-link:hover {
-  color: #000;
-  box-shadow: 0 0 10px;
+.retro-link:hover {
+  background-color: #00ffff;
+  color: #ff00ff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffff00;
 }
 
-/* TikTok Link */
-.gothic-link-tiktok {
-  color: #f8bbd0;
-  border: 1px solid #c62828;
+.retro-footer {
+  margin-top: 40px;
+  color: #00ff00; /* Lime green */
+  font-size: 1rem;
+  text-shadow: 1px 1px 0 #000;
 }
 
-.gothic-link-tiktok:hover {
-  background-color: #c62828;
-  box-shadow: 0 0 10px #c62828;
+/* CRT scanline effect */
+.crt::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 100;
 }
 
-/* Twitch Link */
-.gothic-link-twitch {
-  color: #d1c4e9;
-  border: 1px solid #7b1fa2;
-}
-
-.gothic-link-twitch:hover {
-  background-color: #7b1fa2;
-  box-shadow: 0 0 10px #7b1fa2;
-}
-
-/* YouTube Link */
-.gothic-link-youtube {
-  color: #ffcdd2;
-  border: 1px solid #d32f2f;
-}
-
-.gothic-link-youtube:hover {
-  background-color: #d32f2f;
-  box-shadow: 0 0 10px #d32f2f;
-}
-
-/* Instagram Link */
-.gothic-link-instagram {
-  color: #ce93d8;
-  border: 1px solid #6a1b9a;
-}
-
-.gothic-link-instagram:hover {
-  background-color: #6a1b9a;
-  box-shadow: 0 0 10px #6a1b9a;
-}
-
-.gothic-footer {
-  margin-top: 3rem;
-  text-align: center;
-  color: #757575;
-  font-size: 0.8rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
+/* Glowing text animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  }
 }
